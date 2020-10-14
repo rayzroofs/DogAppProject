@@ -593,8 +593,7 @@ public class DogAppGUI {
 				String resultsDogFriendly = new String();
 				String resultsLifespan = new String();
 				
-				//for (int i = 0;  i < displayNum && i < dogApp.getBestDogList().size(); i++) { 
-				//changed sorting in DogAppRunner, list is ascending, now I am printing in REVERSE ORDER
+
 				for (int i = dogApp.getBestDogList().size()-1, j = 0;  j < displayNum && i >=0 ; i--, j++) { 																									
 					resultsBreed+= dogApp.getBestDogList().get(i).getBreedName()  + "\n";
 					resultsMatches+=dogApp.getBestDogList().get(i).getMatches() + "\n";
