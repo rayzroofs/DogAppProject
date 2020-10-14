@@ -7,7 +7,7 @@ DogAppGUI.java:
   
 DogFile.txt:  
    - holds all of the attributes for various dog breeds that will be read and utilized by the program.  
-   - Format:
+   - Format:  
     Breed 		  String
     KidFriendly bool 0-1
     DogFriendly bool 0-1
