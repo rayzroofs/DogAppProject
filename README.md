@@ -8,15 +8,15 @@ DogAppGUI.java:
 DogFile.txt:  
    - holds all of the attributes for various dog breeds that will be read and utilized by the program.  
    - Format:  
-    Breed 		  String
-    KidFriendly bool 0-1
-    DogFriendly bool 0-1
-    Sheds 		  bool 0-1
-    bark level  int 1-3 
-    trainable   int 1-3 
-    lifespan 	  int 
-    size 		    int 1-4
-    active      int 1-3
-  
+    Breed 		  String  
+    KidFriendly bool 0-1  
+    DogFriendly bool 0-1  
+    Sheds 		  bool 0-1  
+    bark level  int 1-3   
+    trainable   int 1-3   
+    lifespan 	  int   
+    size 		    int 1-4  
+    active      int 1-3  
+    
 Run DogAppGUI.java to run the program.
 
