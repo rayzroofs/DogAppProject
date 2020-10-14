@@ -622,10 +622,6 @@ public class DogAppGUI {
 					resultsLifespan += "\n";
 				}
 				
-				//clearing matches counter for new selections when the button is pressed again
-				for (int i = 0; i < dogApp.getDogList().size();i++) {
-					dogApp.getDogList().get(i).setMatches(0);
-				}
 				
 				lblYourBestDog.setText("Your Best Dog Matches:");
 				lblBreedHeader.setText("Breed");
