@@ -167,6 +167,11 @@ public class DogAppRunner {
 		//empty previous list
 		bestDogList.clear();
 		
+		//the DogAppRunner object that uses this method will clear past match results
+		for (int i = 0; i < this.getDogList().size();i++) {
+			this.getDogList().get(i).setMatches(0);
+		}
+		
 		//incrementing match # counter if an attribute matches a user's preference
 		for (int i = 0; i < dogList.size(); i++) {					
 			dogList.get(i).matches+= (dogList.get(i).isDogFriendly()==dogMatch.isDogFriendly()) ? 1 : 0;
@@ -183,36 +188,12 @@ public class DogAppRunner {
 		//filling best list
 		//4 or more matching traits will be considered a match
 		//using iterator through list
-		//Goes through list multiple times so the bestDogList is sorted by best to worst matches
-		//			inefficient, changed to sort later
-		/*
-		for (DogBreed currentBreed : dogList) {
-		    if (currentBreed.getMatches() == ATTRIBUTES_FOR_MATCHING) {
-		        bestDogList.add(currentBreed);
-		    }
-		}
-		
-		for (DogBreed currentBreed : dogList) {
-		    if (currentBreed.getMatches() == ATTRIBUTES_FOR_MATCHING-1) {
-		        bestDogList.add(currentBreed);
-		    }
-		}
-		for (DogBreed currentBreed : dogList) {
-		    if (currentBreed.getMatches() == ATTRIBUTES_FOR_MATCHING-2) {
-		        bestDogList.add(currentBreed);
-		    }
-		}
-		for (DogBreed currentBreed : dogList) {
-		    if (currentBreed.getMatches() == ATTRIBUTES_FOR_MATCHING-3) {
-		        bestDogList.add(currentBreed);
-		    }
-		}
-		*/
 		for (DogBreed currentBreed : dogList) {
 		    if (currentBreed.getMatches() >= ATTRIBUTES_FOR_MATCHING-3) {
 		        bestDogList.add(currentBreed);
 		    }
 		}
+		//sorting ascending
 		Collections.sort(bestDogList, new Comparator<DogBreed>(){
 			@Override
 			public int compare(DogBreed o1, DogBreed o2) {
