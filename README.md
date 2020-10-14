@@ -1,12 +1,12 @@
 DogBreed.java:  
-    -holds the object DogBreed. It is a class with various attributes for a single dog breed.  
+    - holds the object DogBreed. It is a class with various attributes for a single dog breed.  
 DogAppRunner.java:  
-    -holds all the methods for utilizing DogBreed objects to perform various tasks.  
+    - holds all the methods for utilizing DogBreed objects to perform various tasks.  
 DogAppGUI.java:  
-   -holds the GUI code and calls on DogAppRunner methods to perform actions based on user's inputs.  
+   - holds the GUI code and calls on DogAppRunner methods to perform actions based on user's inputs.  
 DogFile.txt:  
    - holds all of the attributes for various dog breeds that will be read and utilized by the program.  
-  Format:
+  - Format:
     Breed 		  String
     KidFriendly bool 0-1
     DogFriendly bool 0-1
