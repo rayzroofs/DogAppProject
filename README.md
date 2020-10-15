@@ -18,5 +18,9 @@ DogFile.txt:
     size 		    int 1-4  
     active      int 1-3  
     
-Run DogAppGUI.java to run the program.
+Run DogAppGUI.java to run the program.  
+  
+  
+  
+  "Search" feature could implemented be more efficiently for larger lists of dog breeds.
 
