@@ -217,9 +217,8 @@ public class DogAppRunner {
 		}
 		
 		
-		String tempMatch = new String();  //originally had this in loop. Better to not declare it for each check in loop
+		String tempMatch = new String(); 
 		for (int i = 0; i < dogList.size(); i++) {
-			//String tempMatch = new String(); //should probably declare this outside of loop? test later
 			tempMatch = dogList.get(i).getBreedName();		//tempMatch required because will be removing whitespace, and do not want to do that to original list
 			tempMatch = tempMatch.replaceAll("\\s+", "");
 			
