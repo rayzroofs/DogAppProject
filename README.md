@@ -22,7 +22,7 @@ Run DogAppGUI.java to run the program.
   
   
   
-  "Search" feature could implemented be more efficiently for larger lists of dog breeds.  
+  "Search" feature could implemented be more efficiently for larger lists of dog breeds, with a binary search.  
     
     demo: https://gfycat.com/ecstaticenchantinggermanshepherd
 
